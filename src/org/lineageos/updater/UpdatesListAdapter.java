@@ -550,7 +550,7 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
             switch (item.getItemId()) {
                 case R.id.menu_show_changelog:
                     Intent openUrl = new Intent(Intent.ACTION_VIEW,
-                            Uri.parse(update.getDownloadUrl() + ".html"));
+                            Uri.parse(update.getDownloadUrl() + ".txt"));
                     mActivity.startActivity(openUrl);
                     return true;
                 case R.id.menu_delete_action:
